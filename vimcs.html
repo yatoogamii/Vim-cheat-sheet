@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Vim cheat sheet</title>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Vim</h1>
+
+</header>
+
+ <h2>Cursor movement</h2>
+
+
+
+ <code>h</code> = move cursor left
+ <code>j</code> = move cursor down
+ <code>k</code> = move cursor up
+ <code>l</code> = move cursor riht
+ <code>H</code> = move to top of screen
+ <code>M</code> = move to middle of screen
+ <code>L</code> = move to bottom of screen
+ <code>w</code> = jump forwards to the start of a word
+ <code>W</code> = jump forwards to the start of a word (words can contain punctuation)
+ <code>e</code> = jump forwards to the end of a word
+ <code>E</code> = jump forwards to the end of a word (words can contain punctuation)
+ <code>b</code> = jump backwards to the start of a word
+ <code>B</code> = jump backwards to the start of a word (words can contain punctuation)
+ <code>%</code> = move to matchin character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)
+ <code>0</code> = jump to the start of the line
+ <code>^</code> = jump to the first non=blank character of the line
+ <code>$</code> = jump to the end of the line
+ <code>_</code> = jump to the last non=blank character of the line
+ <code>g</code> = go to the first line of the document
+ <code>G</code> = o to the last line of the document
+ <code>5G</code> = o to line 5
+ <code>fx</code> = jump to next occurrence of character x
+ <code>tx</code> = jump to before next occurrence of character x
+ <code>Fx</code> = jump to previous occurence of character x
+ <code>Tx</code> = jump to after previous occurence of character x
+ <code>;</code> = repeat previous f, t, F or T movement
+ <code>,</code> = repeat previous f, t, F or T movement, backwards
+ <code>}</code> = jump to next pararaph (or function/block, when editing code)
+ <code>{</code> = jump to previous pararaph (or function/block, when editing code)
+ <code>zz</code> = center cursor on screen
+ <code>Ctrl + e</code> = move screen down one line (without movin cursor)
+ <code>Ctrl + y</code> = move screen up one line (without movin cursor)
+ <code>Ctrl + b</code> = move back one full screen
+ <code>Ctrl + f</code> = move forward one full screen
+ <code>Ctrl + d</code> = move forward 1/2 a screen
+ <code>Ctrl + u</code> = move back 1/2 a screen
+
+ Cut and past
+
+
+
+ <code>(0)dd</code> = delete (0) line.s
+ <code>(0)d(j)(k)</code> = delete (0) line.s (at the bottom with j and at the top with k) 
+ <code>D</code> = delete from the cursor to the end of the line
+ <code>(0)dw</code> = delete (0) word.s from the cursor to the end of the word
+ <code>(0)diw</code> = delete (0) whole word.s 
+ <code>(0)x</code> = delete character
+ <code>(0)yy</code> / (0)Y = yank (0) a line.s
+ <code>(0)yw</code> = yank (0) word.s
+ <code>y$</code> = yank to end of line
+ <code>p</code> = paste after cursor
+ <code>P</code> = paste before cursor
+
+
+ Editing 
+
+
+
+ <code>(0)r</code> = replace (0) character.s
+ <code>()J</code> = join line below to te current one wit one space(g with no space) in between
+ <code>cc</code> = replace entire line
+ <code>c$</code> = replace to the end of the line
+ <code>ciw</code> = replace entire word
+ <code>cw</code> = replace to the end of the word
+ <code>s</code> = delete character and substitute text
+ <code>S</code> = delete line and substitute text (same as cc)
+ <code>xp</code> = transpose two letters (delete and paste)
+ <code>u</code> = undo
+ <code>Ctrl + r</code> = redo
+ <code>.</code> = repeat last command
+
+ Insert mode - inserting/appending text
+
+
+
+ <code>i</code> = insert before the cursor
+ <code>I</code> = insert at the beinning of the line
+ <code>a</code> = insert after the cursor
+ <code>A</code> = insert at the end of the line
+ <code>o</code> = append a new line below the current line
+ <code>O</code> = append a new line above the current line
+ <code>ea</code> = insert at the end of the word
+ <code>Esc</code> = exit insert mode
+
+ Exiting
+
+
+
+ <code>w</code> = write (save) the file, but don't exit
+ <code>w</code> !sudo tee % = write out the current file usin sudo
+ <code>wq or :x or ZZ</code> = write (save) and quit
+ <code>q</code> = quit (fails if there are unsaved chanes)
+ <code>q!</code> or ZQ = quit and throw away unsaved chanes
+ <code>wqa</code> = write (save) and quit on all tabs
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
