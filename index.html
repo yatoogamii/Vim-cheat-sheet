@@ -1,83 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 	<head>
-
 		<base href="index.html">
 		<img src="image/logovim.png" width="20%" height="20%" alt="vim logo">
+		<link rel="icon" href="image/favicon.ico"/>
 		<meta charset="utf-8">
 		<title>Vim cheat sheet</title>
-
 	</head>
-
 	<body id="top">
-
 		<header>
-
 			<h1>cheat sheet vim</h1>
 			<nav>
 				<ul>
 					<a href="contact.html"> Contact </a>
 				</ul>
 			</nav>
-
 			<hr>
 			<wbr>
-
 				<details>
-
 					<table>
-
 						<thead>
-
 							<tr>
 								<summary><b>Summary of vim commands</b></summary>
 							</tr>
-
 						</thead>
 
 						<tbody>
-
 							<tr>
 								<td><a href="#cursor-movement">Cursor movement</a></td>
 							</tr>
-
 							<tr>
 								<td><a href="#cut-and-past"> Cut and past</a></td>
 							</tr>
-
 							<tr>
 								<td><a href="#editing">Editing</a></td>
 							</tr>
-
 							<tr>
 								<td><a href="#insert-mode">Insert mode</a></td>
 							</tr>
-
 							<tr>
 								<td><a href="#exiting">Exiting</a></td>
 							</tr>
-
 						</tbody>
-
 					</table>
-
 				</details>
-
 		</header>
-
 		<main>
-
 		<section>
-
 			<article>
-
 				<wbr>
 					<hr>
-
 					<h2 id="cursor-movement">Cursor movement</h2>
-
 					<p><code>h</code> = move cursor left</p>
 					<p><code>j</code> = move cursor down</p>
 					<p><code>k</code> = move cursor up</p>
@@ -114,16 +87,12 @@
 					<p><code>Ctrl + f</code> = move forward one full screen</p>
 					<p><code>Ctrl + d</code> = move forward 1/2 a screen</p>
 					<p><code>Ctrl + u</code> = move back 1/2 a screen</p>
-
 			</article>
 
 			<article>
-
 				<wbr>
 					<hr>
-
 					<h2 id="cut-and-past">Cut and past</h2>
-
 					<p><code>(0)dd</code> = delete (0) line.s</p>
 					<p><code>(0)d(j)(k)</code> = delete (0) line.s (at the bottom with j and at the top with k)</p> 
 					<p><code>D</code> = delete from the cursor to the end of the line</p>
@@ -135,16 +104,12 @@
 					<p><code>y$</code> = yank to end of line</p>
 					<p><code>p</code> = paste after cursor</p>
 					<p><code>P</code> = paste before cursor</p>
-
 			</article>
 
 			<article>
-
 				<wbr>
 					<hr>
-
 					<h2 id="editing">Editing</h2> 
-
 					<p><code>(0)r</code> = replace (0) character.s</p>
 					<p><code>()J</code> = join line below to te current one wit one space(g with no space) in between</p>
 					<p><code>cc</code> = replace entire line</p>
@@ -158,16 +123,12 @@
 					<p><code>Ctrl + r</code> = redo</p>
 					<p><code>.</code> = repeat last command</p>
 					<p><code>gg=G</code> = indent auto </p>
-
 			</article>
 
 			<article>
-
 				<wbr>
 					<hr>
-
 					<h2 id="insert-mode">Insert mode - inserting/appending text</h2>
-
 					<p><code>i</code> = insert before the cursor</p>
 					<p><code>I</code> = insert at the beinning of the line</p>
 					<p><code>a</code> = insert after the cursor</p>
@@ -176,81 +137,46 @@
 					<p><code>O</code> = append a new line above the current line</p>
 					<p><code>ea</code> = insert at the end of the word</p>
 					<p><code>Esc</code> = exit insert mode</p>
-
 			</article>
 
 			<article>
-
 				<wbr>
 					<hr>
-
 					<h2 id="exiting">Exiting</h2>
-
 					<p><code>w</code> = write (save) the file, but don't exit</p>
 					<p><code>w</code> !sudo tee % = write out the current file usin sudo</p>
 					<p><code>wq or :x or ZZ</code> = write (save) and quit</p>
 					<p><code>q</code> = quit (fails if there are unsaved chanes)</p>
 					<p><code>q!</code> or ZQ = quit and throw away unsaved chanes</p>
 					<p><code>wqa</code> = write (save) and quit on all tabs</p>
-
 			</article>
-
 			<hr>
-
 		</section>
-
 		</main>
-
 	</body>
-
 	<footer>
-
 		<section>
-
 			<article>
-
 				<a href="#top">
-
 					<img src="image/arrowup.png" width="40px" height="40px" alt="arrow up">
-
 				</a>
-
 			</article>
 
 			<article>
-
-				<nav>
-
 					<a href="https://github.com/yatoogamii" target="_blank"> 
-
 						<img src="image/logogithub.jpeg" width="80px" height="50px" alt="logo github">
-
 					</a>
-
 					<a href="https://twitter.com/BracavalE" target="_blank">
-
 						<img src="image/logotwitter.png" width="50px" height="50px" alt="logo twitter">
-
 					</a>
-
 					<a href="https://www.linkedin.com/in/elias-bracaval-517678174/" target="_blank">
-
 						<img src="image/logolinkedin.png" width="55px" height="50px" alt="logo linkedin">
-
 					</a>
-
-				</nav>
-
 			</article>
 
 			<article>
-
-				<p><strong> Copyright 2018 yatoogamii <strong><p>
-
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 			</article>
-
 		</section>
-
 	</footer>
-
 </html>
